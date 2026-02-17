@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>🔥 FireRodan Studio 🔥</title>
+    <meta name="description" content="Official website of FireRodan Studio – Manga & Anime creations.">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: radial-gradient(circle at top, #00eaff, #001f33);
+            color: #eafcff;
+            min-height: 100vh;
+        }
+
+        /* NAVBAR */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 40px;
+            background: rgba(0, 10, 20, 0.85);
+            backdrop-filter: blur(10px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo img {
+            height: 45px;
+            width: 45px;
+            border-radius: 50%;
+            box-shadow: 0 0 15px cyan;
+        }
+
+        .logo span {
+            font-weight: 800;
+            font-size: 1.3rem;
+            color: cyan;
+            text-shadow: 0 0 10px cyan;
+        }
+
+        nav a {
+            color: #cfffff;
+            margin-left: 25px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: cyan;
+            text-shadow: 0 0 10px cyan;
+        }
+
+        /* BANNER */
+        .hero {
+            height: 80vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            background:
+                linear-gradient(rgba(0, 10, 20, 0.7), rgba(0, 10, 20, 0.9)),
+                url("banner.jpg") center/cover no-repeat;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: cyan;
+            text-shadow: 0 0 30px cyan;
+        }
+
+        .hero p {
+            margin-top: 15px;
+            font-size: 1.2rem;
+            max-width: 700px;
+            color: #dfffff;
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 80px 40px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: cyan;
+            text-shadow: 0 0 15px cyan;
+        }
+
+        section p {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #e6ffff;
+        }
+
+        /* CARDS */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: rgba(0, 15, 30, 0.8);
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 0 25px rgba(0, 255, 255, 0.25);
+            transition: 0.4s;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 40px cyan;
+        }
+
+        .card h3 {
+            color: cyan;
+            margin-bottom: 10px;
+        }
+
+        /* FOOTER */
+        footer {
+            background: rgba(0, 10, 20, 0.9);
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+            box-shadow: 0 0 20px rgba(0,255,255,0.3);
+        }
+
+        footer p {
+            color: #bfffff;
+            font-size: 0.9rem;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 600px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header>
+        <div class="logo">
+            <img src="images/logo/FireRodan Profile.jpg" alt="FireRodan Logo">
+            <span>FireRodan Studio</span>
+        </div>
+
+        <nav>
+           <a href="index.html">Home</a>
+           <a href="manga.html">Manga</a>
+           <a href="anime.html">Anime</a>
+           <a href="projects.html">Projects</a>
+           <a href="about.html">Contact</a>
+           <a href="support.html">Support</a>
+        </nav>
+    </header>
+
+    <!-- HERO / BANNER -->
+    <div class="hero">
+        <div>
+            <h1>FireRodan Studio</h1>
+            <p>
+                A self-made studio for my original manga and anime ideas
+                [mostly horror genre].
+            </p>
+        <div class="search-box">
+            <input type="text" id="search" placeholder="Search..." onkeydown="if(event.key==='Enter')searchSite()">
+        </div>
+        </div>
+    </div>
+
+    <!-- INTRO -->
+    <section>
+        <h2>About the Studio</h2>
+        <p>
+            Welcome to the official website of <strong>FireRodan Studio</strong>.
+            This is the home of my original manga and anime projects.
+            Warning, some of my stories might be too much and emotionally stressful,
+            anyways, Enjoy!
+        </p>
+    </section>
+
+    <!-- PROJECTS -->
+    <section>
+        <h2>Featured Works</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Spirit Code</h3>
+                <p>A supernatural manga blending mystery, action, and hidden powers.</p>
+            </div>
+
+            <div class="card">
+                <h3>Blood Hunt</h3>
+                <p>A dark, intense story where survival is the ultimate rule.</p>
+            </div>
+
+            <div class="card">
+                <h3>Devil Agents</h3>
+                <p>Elite fighters facing demons in a world on the edge of collapse.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2026 FireRodan Studio • All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>

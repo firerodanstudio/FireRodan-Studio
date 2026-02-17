@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #00eaff, #001f33);
+    color: #eafcff;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: rgba(0, 10, 20, 0.9);
+    box-shadow: 0 0 20px rgba(0,255,255,0.3);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    box-shadow: 0 0 12px cyan;
+}
+
+.logo span {
+    font-weight: 800;
+    color: cyan;
+}
+
+/* NAV */
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #cfffff;
+}
+
+nav a:hover {
+    color: cyan;
+}
+
+/* SEARCH */
+.search-box input {
+    padding: 6px 12px;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+}
+
+/* HERO */
+.hero {
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:
+        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+        url("images/banners/banner.jpg") center/cover no-repeat;
+}
+
+.hero h1 {
+    color: cyan;
+    font-size: 3rem;
+    text-shadow: 0 0 25px cyan;
+}
+
+/* CONTENT */
+section {
+    padding: 60px 40px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.card {
+    background: rgba(0,15,30,0.85);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0,255,255,0.25);
+}
+
+/* CHAPTER LIST */
+.chapter {
+    padding: 15px;
+    margin-top: 15px;
+    border-radius: 15px;
+    background: rgba(0,20,40,0.85);
+}
+
+.chapter a {
+    color: #eaffff;
+    text-decoration: none;
+}
+
+/* READER */
+.reader {
+    max-width: 900px;
+    margin: auto;
+}
+
+.manga-page {
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,255,255,0.25);
+}
+
+.reader-nav {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
